@@ -2,3 +2,7 @@
 
 	<h4>Go to '/teachers' in order to get an error message on the page using a substate(template that uses the route name, a 'dash' and other name)</h4>
 {{outlet}}
+
+student: {{student}}<br>
+	<h4>Clicking below this text will fire a name that is passed when clicking on the link(a query-params that it's catched on the controller)</h4>
+{{#link-to 'application' (query-params student="Jane")}}Jane Query {{/link-to}}
